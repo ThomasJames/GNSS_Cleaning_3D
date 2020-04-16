@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy import stats
 from statistics import stdev
 from GNSSCleaner_Class import GNSSCleaner
 from Generate_Data import X_raw, Y_raw, Z_raw
+import seaborn as sns
 
 if __name__=="__main__":
 
@@ -29,6 +29,12 @@ if __name__=="__main__":
     ax.set_ylim3d(5, 15)
     ax.set_zlim3d(5, 15)
     plt.savefig(str(title) + ".png")
+    plt.show()
+
+    sns.distplot(X_raw, hist=False, color="salmon")
+    sns.distplot(Y_raw, hist=False, color="skyblue" )
+    sns.distplot(Z_raw, hist=False, color="grey")
+    plt.savefig(str(title) + " distribution.png")
     plt.show()
 
     """
@@ -57,6 +63,12 @@ if __name__=="__main__":
     plt.savefig(str(title) + ".png")
     plt.show()
 
+    sns.distplot(x_out, hist=False, color="salmon")
+    sns.distplot(y_out, hist=False, color="skyblue" )
+    sns.distplot(z_out, hist=False, color="grey")
+    plt.savefig(str(title) + " distribution.png")
+    plt.show()
+
     """
     Second Iteration
     """
@@ -81,5 +93,11 @@ if __name__=="__main__":
     ax.set_ylim3d(5, 15)
     ax.set_zlim3d(5, 15)
     plt.savefig(str(title) + ".png")
+    plt.show()
+
+    sns.distplot(x_out, hist=False, color="salmon")
+    sns.distplot(y_out, hist=False, color="skyblue" )
+    sns.distplot(z_out, hist=False, color="grey")
+    plt.savefig(str(title) + " distribution.png")
     plt.show()
 
