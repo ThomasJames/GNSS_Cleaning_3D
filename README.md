@@ -4,8 +4,6 @@ GNSS recievers are used to establish geospatial coordinates. The [X, Y, Z] ouput
 This program aims to statistically remove the gross errors. 
 [This](https://ieeexplore.ieee.org/abstract/document/7063664/) book is great for information about GNSS (and multisensor intergration).
 
-This code has applicatons outside survey. 
-
 Some sample generator is generated [here](https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Generate_Data.py)
 
 The class performing the computations is [here](https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/GNSSCleaner_Class.py)
@@ -18,6 +16,7 @@ Confidence levels can be adjusted. 95%, 98% and 99% are potential defaults.
 pip install numpy 
 pip install matplotlib
 pip install statistics 
+pip install seaborn
 
 ```
 
