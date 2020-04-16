@@ -18,15 +18,17 @@ if __name__=="__main__":
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     ax.grid(False)
+    title = "Raw Data"
     ax.scatter(X_raw, Y_raw, Z_raw, color="skyblue")
     ax.scatter(np.average(X_raw), np.average(Y_raw), np.average(Z_raw), color="salmon", s=sd)
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
-    ax.set_title("Raw Data")
+    ax.set_title(title)
     ax.set_xlim3d(5, 15)
     ax.set_ylim3d(5, 15)
     ax.set_zlim3d(5, 15)
+    plt.savefig(str(title) + ".png")
     plt.show()
 
     """
@@ -42,15 +44,17 @@ if __name__=="__main__":
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     ax.grid(False)
+    title = "First Iteration"
     ax.scatter(x_out, y_out, z_out, color="skyblue")
     ax.scatter(np.average(x_out), np.average(y_out), np.average(z_out), color="salmon", s=sd)
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
-    ax.set_title("First Iteration")
+    ax.set_title(title)
     ax.set_xlim3d(5, 15)
     ax.set_ylim3d(5, 15)
     ax.set_zlim3d(5, 15)
+    plt.savefig(str(title) + ".png")
     plt.show()
 
     """
@@ -66,14 +70,16 @@ if __name__=="__main__":
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     ax.grid(False)
+    title = "Second Iteration"
     ax.scatter(x_out, y_out, z_out, color="skyblue")
     ax.scatter(np.average(x_out), np.average(y_out), np.average(z_out), color="salmon", s=sd)
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
-    ax.set_title("Second Iteration")
+    ax.set_title(title)
     ax.set_xlim3d(5, 15)
     ax.set_ylim3d(5, 15)
     ax.set_zlim3d(5, 15)
+    plt.savefig(str(title) + ".png")
     plt.show()
 
