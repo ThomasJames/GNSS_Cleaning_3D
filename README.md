@@ -21,9 +21,9 @@ pip install seaborn
 ```
 
 ### Visualised
-<img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/First%20Iteration.png" width="280"> <img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/Second%20Iteration.png" width="280"> <img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/Second%20Iteration.png" width="280">
+<img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/Raw%20Data.png" width="280"> <img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/First%20Iteration.png" width="280"> <img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/Second%20Iteration.png" width="280">
 
-<img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/Raw%20Data%20distribution.png" width="280"> <img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/Second%20Iteration%20distribution.png" width="280"> <img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/Second%20Iteration%20distribution.png" width="280">
+<img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/Raw%20DataZ-Scores.png" width="280"> <img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/First%20IterationZ-Scores.png" width="280"> <img src="https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Plots/Second%20IterationZ-Scores.png" width="280">
 
 
 
