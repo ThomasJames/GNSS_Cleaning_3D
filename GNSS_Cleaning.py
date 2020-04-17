@@ -53,7 +53,7 @@ if __name__=="__main__":
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     ax.grid(False)
-    title = "First Iteration Zscores"
+    title = "First Iteration"
     ax.scatter(x_out, y_out, z_out, color="skyblue")
     ax.scatter(np.average(x_out), np.average(y_out), np.average(z_out), color="salmon", s=sd)
     ax.set_xlabel('X')
