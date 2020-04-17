@@ -30,14 +30,14 @@ if __name__=="__main__":
     ax.set_xlim3d(5, 15)
     ax.set_ylim3d(5, 15)
     ax.set_zlim3d(5, 15)
-    plt.savefig('Plots/'+"Raw Data ZScores" + ".png")
+    plt.savefig('Plots/'+"Raw Data" + ".png")
     plt.show()
 
     sns.distplot(zscore(X_raw), hist=False, color="salmon")
     sns.distplot(zscore(Y_raw), hist=False, color="skyblue" )
     sns.distplot(zscore(Z_raw), hist=False, color="grey")
     plt.xlabel('Z-Score')
-    plt.savefig('Plots/'+str(title) + " distribution.png")
+    plt.savefig('Plots/'+str(title) + "Z-Scores.png")
     plt.show()
 
     """
@@ -71,7 +71,7 @@ if __name__=="__main__":
     sns.distplot(zscore(z_out), hist=False, color="grey")
     plt.legend()
     plt.xlabel('Z-Score')
-    plt.savefig('Plots/'+str(title) + " distribution.png")
+    plt.savefig('Plots/'+str(title) + "Z-Scores.png")
     plt.show()
 
     """
@@ -104,6 +104,6 @@ if __name__=="__main__":
     sns.distplot(zscore(y_out), hist=False, color="skyblue" )
     sns.distplot(zscore(z_out), hist=False, color="grey")
     plt.xlabel('Z-Score')
-    plt.savefig('Plots/'+str(title) + " distribution.png")
+    plt.savefig('Plots/'+str(title) + "Z-Scores.png")
     plt.show()
 
