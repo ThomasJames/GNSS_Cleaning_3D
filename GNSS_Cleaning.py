@@ -4,6 +4,8 @@ from statistics import stdev
 from GNSSCleaner_Class import GNSSCleaner
 from Generate_Data import X_raw, Y_raw, Z_raw
 import seaborn as sns
+from scipy.stats import zscore
+
 
 if __name__=="__main__":
 
@@ -28,13 +30,14 @@ if __name__=="__main__":
     ax.set_xlim3d(5, 15)
     ax.set_ylim3d(5, 15)
     ax.set_zlim3d(5, 15)
-    plt.savefig(str(title) + ".png")
+    plt.savefig('Plots/'+"Raw Data ZScores" + ".png")
     plt.show()
 
-    sns.distplot(X_raw, hist=False, color="salmon")
-    sns.distplot(Y_raw, hist=False, color="skyblue" )
-    sns.distplot(Z_raw, hist=False, color="grey")
-    plt.savefig(str(title) + " distribution.png")
+    sns.distplot(zscore(X_raw), hist=False, color="salmon")
+    sns.distplot(zscore(Y_raw), hist=False, color="skyblue" )
+    sns.distplot(zscore(Z_raw), hist=False, color="grey")
+    plt.xlabel('Z-Score')
+    plt.savefig('Plots/'+str(title) + " distribution.png")
     plt.show()
 
     """
@@ -50,7 +53,7 @@ if __name__=="__main__":
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     ax.grid(False)
-    title = "First Iteration"
+    title = "First Iteration Zscores"
     ax.scatter(x_out, y_out, z_out, color="skyblue")
     ax.scatter(np.average(x_out), np.average(y_out), np.average(z_out), color="salmon", s=sd)
     ax.set_xlabel('X')
@@ -60,14 +63,15 @@ if __name__=="__main__":
     ax.set_xlim3d(5, 15)
     ax.set_ylim3d(5, 15)
     ax.set_zlim3d(5, 15)
-    plt.savefig(str(title) + ".png")
+    plt.savefig('Plots/'+str(title) + ".png")
     plt.show()
 
-    sns.distplot(x_out, hist=False, color="salmon")
-    sns.distplot(y_out, hist=False, color="skyblue" )
-    sns.distplot(z_out, hist=False, color="grey")
+    sns.distplot(zscore(x_out), hist=False, color="salmon")
+    sns.distplot(zscore(y_out), hist=False, color="skyblue" )
+    sns.distplot(zscore(z_out), hist=False, color="grey")
     plt.legend()
-    plt.savefig(str(title) + " distribution.png")
+    plt.xlabel('Z-Score')
+    plt.savefig('Plots/'+str(title) + " distribution.png")
     plt.show()
 
     """
@@ -93,12 +97,13 @@ if __name__=="__main__":
     ax.set_xlim3d(5, 15)
     ax.set_ylim3d(5, 15)
     ax.set_zlim3d(5, 15)
-    plt.savefig(str(title) + ".png")
+    plt.savefig('Plots/'+str(title) + ".png")
     plt.show()
 
-    sns.distplot(x_out, hist=False, color="salmon")
-    sns.distplot(y_out, hist=False, color="skyblue" )
-    sns.distplot(z_out, hist=False, color="grey")
-    plt.savefig(str(title) + " distribution.png")
+    sns.distplot(zscore(x_out), hist=False, color="salmon")
+    sns.distplot(zscore(y_out), hist=False, color="skyblue" )
+    sns.distplot(zscore(z_out), hist=False, color="grey")
+    plt.xlabel('Z-Score')
+    plt.savefig('Plots/'+str(title) + " distribution.png")
     plt.show()
 
