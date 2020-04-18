@@ -17,6 +17,7 @@ pip install numpy
 pip install matplotlib
 pip install statistics 
 pip install seaborn
+pip install scipy
 
 ```
 
