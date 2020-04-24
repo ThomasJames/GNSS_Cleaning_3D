@@ -1,6 +1,6 @@
 # Statistical treatment of GNSS data
 
-GNSS recievers are used to establish geospatial coordinates. The [X, Y, Z] ouput will usualy contain gross errors and random noise.
+GNSS recievers are used to establish geospatial coordinates. The [X, Y, Z] ouput will always contain gross and random errors.
 This program aims to statistically remove the gross errors. 
 [This](https://ieeexplore.ieee.org/abstract/document/7063664/) book is great for information about GNSS (and multisensor intergration).
 
