@@ -57,6 +57,6 @@ class GNSSCleaner:
         z_c = [i for i in z if i]
 
         # Tell user how many values have had to be removed. 
-        print(len(self.x_raw) - len(x_c), " values removed")
+        print(f"{len(self.x_raw) - len(x_c)} values removed")
 
         return x_c, y_c, z_c
