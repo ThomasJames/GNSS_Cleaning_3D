@@ -4,7 +4,7 @@ GNSS recievers are used to establish geospatial coordinates. The [X, Y, Z] ouput
 The purpose of this program is to remove the gross errors using Z-Scores. 
 [This](https://ieeexplore.ieee.org/abstract/document/7063664/) book is great for information about GNSS (and multisensor intergration).
 
-Some sample generator is generated [here](https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Generate_Data.py)
+Some sample data is generated [here](https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/Generate_Data.py)
 
 The class performing the computations is [here](https://github.com/ThomasJames/GNSS_Cleaning_3D/blob/master/GNSSCleaner_Class.py)
 
